@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <input type="text" name="" id="textnhap" />
+        <select name="fet" id="feettomet">
+            <option value ="feet">feet to metter</option>
+            <option value ="metter">metter to feet</option>
+        </select>
+
+
+        <input type="text" name="" id="textxuat" />
+
+
+        <input type="button" value="chuyen đoi" onclick="quydoi()">
+<script>
+    function quydoi(){
+    var nhap = parseInt(document.getElementById('textnhap').value);
+    var fvsm = document.getElementById('feettomet').value;
+    var kq =0;
+
+    if(fvsm == "feet")
+    {
+        kq = nhap * 0.305;
+    }
+    if(fvsm == "metter")
+    {
+        kq = nhap * 3.279;
+    }
+    alert(kq);
+    document.getElementById('textxuat').value = kq;
+}
+
+</script>
+</body>
+</html>
